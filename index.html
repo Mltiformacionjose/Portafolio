@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>José.dev | Portfolio - Desarrollador Web &amp; Frontend</title>
+<link href="css/output.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;family=Geist:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<style>
+  body {
+    background-color: #0e1416;
+    color: #dee3e6;
+  }
+  .glass-card {
+    background: rgba(27, 33, 34, 0.75);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .glass-card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .glass-card-hover:hover {
+    border-color: rgba(76, 215, 246, 0.4);
+    box-shadow: 0 10px 30px -10px rgba(6, 182, 212, 0.25);
+    transform: translateY(-4px);
+  }
+  .primary-glow {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.35);
+  }
+  .primary-glow:hover {
+    box-shadow: 0 0 35px rgba(6, 182, 212, 0.6);
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, #4cd7f6 0%, #38bdf8 50%, #0566d9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+  }
+</style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden antialiased selection:bg-primary-container selection:text-white">
+<!-- 1. Header Semántico Fijo -->
+<header class="fixed top-0 w-full z-50 bg-[#0e1416]/80 backdrop-blur-md border-b border-outline-variant/30 transition-all duration-300" id="navbar">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-16">
+<a class="flex items-center gap-2 group" href="#inicio">
+<div class="w-8 h-8 rounded-lg bg-primary/15 border border-primary/40 flex items-center justify-center text-primary font-code font-bold text-sm group-hover:scale-105 transition-transform">
+        &lt;/&gt;
+      </div>
+<span class="font-headline-md text-xl font-extrabold text-primary tracking-tight">José<span class="text-on-surface">.dev</span></span>
+</a>
+<nav aria-label="Navegación principal" class="hidden lg:flex items-center gap-7">
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#inicio">Inicio</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#sobre-mi">Sobre mí</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#formacion">Formación</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#stack">Stack</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#proyectos">Proyectos</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#contacto">Contacto</a>
+</nav>
+<div class="flex items-center gap-3">
+<!-- Botón Descargar CV -->
+<a class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-surface-variant/40 border border-outline-variant/40 text-on-surface hover:border-primary/50 hover:text-primary transition-all" href="cv.html" download="CV-Jose-Multiformacion.html" title="Descargar Currículum Vitae">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Descargar CV</span>
+</a>
+<!-- Redes directas -->
+<a aria-label="GitHub de José" class="p-2 rounded-xl border border-outline-variant/30 bg-surface-container-low/60 text-on-surface-variant hover:text-primary hover:border-primary/40 transition-all" href="https://github.com/Mltiformacionjose" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path></svg>
+</a>
+<a aria-label="LinkedIn de José" class="p-2 rounded-xl border border-outline-variant/30 bg-surface-container-low/60 text-on-surface-variant hover:text-primary hover:border-primary/40 transition-all" href="https://www.linkedin.com/in/jose-multiformacion-278600312" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451c.979 0 1.778-.773 1.778-1.729V1.73C24 .774 23.205 0 22.225 0z"></path></svg>
+</a>
+<!-- Toggle Modo Claro/Oscuro decorativo interactivo -->
+<button aria-label="Cambiar tema visual" class="p-2 rounded-xl border border-outline-variant/30 bg-surface-container-low/60 text-tertiary hover:text-primary hover:border-primary/40 transition-all flex items-center justify-center" onclick="alert('Modo oscuro predeterminado de alta fidelidad activo 🌙')">
+<span class="material-symbols-outlined text-[20px]">dark_mode</span>
+</button>
+<!-- CTA Contactar -->
+<a class="bg-primary-container text-on-primary-container px-4 sm:px-5 py-2 rounded-full font-label-md text-xs font-bold primary-glow transition-all hover:scale-105 active:scale-95" href="#contacto">
+        Contactar
+      </a>
+</div>
+</div>
+</header>
+<main class="relative pt-16">
+<!-- 2. Hero Section (#inicio) -->
+<section class="relative min-h-[92vh] flex items-center justify-center px-margin-mobile md:px-margin-desktop py-12" id="inicio">
+<div class="absolute inset-0 z-0 overflow-hidden opacity-35 pointer-events-none">
+<div class="absolute -top-[15%] -left-[10%] w-[55%] h-[55%] bg-primary/20 blur-[130px] rounded-full"></div>
+<div class="absolute -bottom-[20%] -right-[10%] w-[60%] h-[60%] bg-secondary-container/20 blur-[140px] rounded-full"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+<div class="text-center lg:text-left order-2 lg:order-1 lg:col-span-7">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-primary font-code text-xs font-medium mb-5">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span>Disponible para proyectos / Prácticas</span>
+</div>
+<h1 class="font-display-xl-mobile md:font-display-xl tracking-tight mb-4 leading-tight">
+          ¡Hola! 👋 Soy <span class="text-gradient">José</span>
+</h1>
+<p class="text-primary font-headline-md text-lg sm:text-xl md:text-2xl font-semibold mb-4">
+          Estudiante de Desarrollo Web &amp; Frontend / Full-Stack Developer
+        </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-2xl mx-auto lg:mx-0">
+          Estudiante de Desarrollo Web radicado en España, apasionado por crear aplicaciones web modernas, funcionales y atractivas con código limpio y sólida arquitectura de software.
+        </p>
+<!-- CTAs & Enlaces -->
+<div class="flex flex-wrap gap-4 justify-center lg:justify-start items-center">
+<a class="bg-primary-container text-on-primary-container px-6 py-3.5 rounded-xl font-label-md text-sm font-bold primary-glow transition-all hover:-translate-y-1 flex items-center gap-2" href="#proyectos">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>Ver Proyectos</span>
+</a>
+<a class="border border-outline-variant bg-surface-variant/30 backdrop-blur-md px-6 py-3.5 rounded-xl font-label-md text-sm font-bold hover:border-primary/50 hover:text-primary transition-all flex items-center gap-2" href="#contacto">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>Contactar</span>
+</a>
+<a class="border border-outline-variant/60 bg-surface-container-low px-5 py-3.5 rounded-xl font-label-md text-sm font-semibold hover:border-primary/50 hover:text-primary transition-all flex items-center gap-2" href="cv.html" download="CV-Jose-Multiformacion.html">
+<span class="material-symbols-outlined text-[18px]">description</span>
+<span>Descargar CV</span>
+</a>
+</div>
+<!-- Social Badges directos -->
+<div class="mt-8 flex items-center gap-4 justify-center lg:justify-start text-xs text-on-surface-variant">
+<span class="font-code text-outline">Conectar:</span>
+<a class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container border border-outline-variant/30 hover:text-primary hover:border-primary/40 transition-colors" href="https://github.com/Mltiformacionjose" target="_blank">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path></svg>
+<span>GitHub</span>
+</a>
+<a class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container border border-outline-variant/30 hover:text-primary hover:border-primary/40 transition-colors" href="https://www.linkedin.com/in/jose-multiformacion-278600312" target="_blank">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451c.979 0 1.778-.773 1.778-1.729V1.73C24 .774 23.205 0 22.225 0z"></path></svg>
+<span>LinkedIn</span>
+</a>
+</div>
+</div>
+<!-- Foto de José con badge interactivo -->
+<div class="order-1 lg:order-2 lg:col-span-5 flex justify-center">
+<div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 group">
+<div class="absolute inset-0 bg-primary/25 rounded-full blur-2xl group-hover:blur-3xl transition-all duration-700"></div>
+<div class="relative h-full w-full rounded-full overflow-hidden p-1.5 bg-gradient-to-tr from-primary via-cyan-500 to-secondary shadow-2xl">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-lowest">
+<img alt="José - Estudiante de Desarrollo Web" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/img/jose.png"/>
+</div>
+</div>
+<div class="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 glass-card px-4 py-2.5 rounded-2xl border border-primary/30 flex items-center gap-2.5 shadow-xl hover:scale-105 transition-transform cursor-pointer" title="Actualmente buscando prácticas / proyectos">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+</span>
+<div class="leading-none">
+<p class="font-code text-[11px] text-primary font-bold">DISPONIBLE</p>
+<p class="font-body-md text-xs text-on-surface">Prácticas &amp; Proyectos</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Sección Sobre Mí (#sobre-mi) -->
+<section class="py-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-outline-variant/20" id="sobre-mi">
+<div class="max-w-3xl mx-auto text-center mb-12">
+<span class="text-primary font-code text-xs uppercase tracking-widest font-semibold">Trayectoria y Vocación</span>
+<h2 class="font-headline-lg text-headline-lg mt-1 mb-4">Sobre Mí</h2>
+<p class="text-on-surface-variant text-base sm:text-lg">
+        Estudiante de Desarrollo Web en España, enfocado en el ecosistema Full-Stack con gran entusiasmo por el Frontend moderno y la creación de interfaces intuitivas y de alto rendimiento.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Tarjeta 1: Perfil -->
+<div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-2xl">laptop_mac</span>
+</div>
+<div>
+<h3 class="font-headline-md text-lg font-bold mb-1 text-on-surface">Perfil Profesional</h3>
+<p class="text-on-surface-variant text-sm">Estudiante activo de Desarrollo Web con sólida base en lógica computacional, estructura de datos y desarrollo web interactivo.</p>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-primary font-code">
+<span>Estudiante Web</span>
+<span>Full-Stack &amp; Frontend</span>
+</div>
+</div>
+<!-- Tarjeta 2: Ubicación -->
+<div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-tertiary/10 border border-tertiary/30 flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-2xl">explore</span>
+</div>
+<div>
+<h3 class="font-headline-md text-lg font-bold mb-1 text-on-surface">Ubicación &amp; Modalidad</h3>
+<p class="text-on-surface-variant text-sm">España. Plena disponibilidad para trabajo remoto, híbrido o presencial con flexibilidad horaria y adaptabilidad a equipos internacionales.</p>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-tertiary font-code">
+<span>📍 España</span>
+<span>Remoto / Presencial</span>
+</div>
+</div>
+<!-- Tarjeta 3: Enfoque -->
+<div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 border border-secondary/30 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-2xl">code_blocks</span>
+</div>
+<div>
+<h3 class="font-headline-md text-lg font-bold mb-1 text-on-surface">Enfoque Técnico</h3>
+<p class="text-on-surface-variant text-sm">Full-Stack &amp; Clean Code. Compromiso con buenas prácticas, componentes reutilizables, legibilidad y rendimiento optimizado.</p>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-secondary font-code">
+<span>Clean Architecture</span>
+<span>Performance</span>
+</div>
+</div>
+<!-- Tarjeta 4: Objetivo -->
+<div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between md:col-span-2 lg:col-span-2">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+<span class="material-symbols-outlined text-2xl">flag</span>
+</div>
+<div>
+<h3 class="font-headline-md text-lg font-bold mb-1 text-on-surface">Objetivo Profesional Actual</h3>
+<p class="text-on-surface-variant text-sm">
+              Conseguir mi primera oportunidad profesional o prácticas curriculares/extracurriculares en desarrollo de software donde aportar valor real, resolver desafíos técnicos y crecer colaborando con desarrolladores senior.
+            </p>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 flex flex-wrap gap-2 text-xs">
+<span class="px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/30 text-emerald-400 font-code font-medium">Búsqueda de Prácticas</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/30 text-on-surface font-code">Junior Developer</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/30 text-on-surface font-code">Incorporación inmediata</span>
+</div>
+</div>
+<!-- Tarjeta 5: Intereses -->
+<div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-2xl">psychology</span>
+</div>
+<div>
+<h3 class="font-headline-md text-lg font-bold mb-1 text-on-surface">Intereses &amp; Pasiones</h3>
+<p class="text-on-surface-variant text-sm">Arquitectura de software escalable, testing automatizado, accesibilidad y diseño de interfaces UI/UX centrado en el usuario.</p>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-primary font-code">
+<span>UI/UX &amp; QA</span>
+<span>Testing</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Formación Académica (#formacion) -->
+<section class="py-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-outline-variant/20" id="formacion">
+<div class="text-center mb-14">
+<span class="text-primary font-code text-xs uppercase tracking-widest font-semibold">Educación y Evolución</span>
+<h2 class="font-headline-lg text-headline-lg mt-1 mb-4">Formación Académica &amp; Continua</h2>
+<div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Columna Trayectoria / Grado -->
+<div class="lg:col-span-6 space-y-6">
+<div class="glass-card p-6 sm:p-8 rounded-3xl relative overflow-hidden border-l-4 border-l-primary">
+<div class="flex items-center gap-3 text-primary text-xs font-code mb-2">
+<span class="material-symbols-outlined text-lg">school</span>
+<span>FORMACIÓN OFICIAL / BOOTCAMP</span>
+</div>
+<h3 class="font-headline-md text-xl font-bold mb-2">Desarrollo de Aplicaciones Web (Full-Stack)</h3>
+<p class="text-tertiary font-code text-xs mb-4">En curso | España</p>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+            Formación intensiva orientada a la ingeniería de software aplicada: arquitectura cliente-servidor, desarrollo frontend reactivo con ecosistemas modernos, gestión de bases de datos relacionales, control de versiones colaborativo y entrega de software robusto.
+          </p>
+<div class="space-y-3">
+<div class="flex items-center gap-3 text-xs text-on-surface bg-surface-container-lowest/60 p-3 rounded-xl border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Desarrollo frontend moderno, maquetación semántica y diseño responsivo</span>
+</div>
+<div class="flex items-center gap-3 text-xs text-on-surface bg-surface-container-lowest/60 p-3 rounded-xl border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>APIs RESTful, integración de backend y persistencia relacional con PostgreSQL/Prisma</span>
+</div>
+<div class="flex items-center gap-3 text-xs text-on-surface bg-surface-container-lowest/60 p-3 rounded-xl border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Proyectos en equipo con flujos Git branching, PRs y revisiones de código</span>
+</div>
+</div>
+</div>
+<div class="glass-card p-6 rounded-2xl flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-tertiary/10 border border-tertiary/30 flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-2xl">auto_stories</span>
+</div>
+<div>
+<h4 class="font-headline-md text-base font-bold text-on-surface">Aprendizaje Activo Autodidacta</h4>
+<p class="text-on-surface-variant text-xs mt-1">Estudio continuo de documentación técnica oficial, resolución de algoritmos y desarrollo de proyectos prácticos orientados a casos reales.</p>
+</div>
+</div>
+</div>
+<!-- Columna Metas 2026 y Actualmente Aprendiendo -->
+<div class="lg:col-span-6 space-y-6">
+<!-- Metas 2026 -->
+<div class="glass-card p-6 sm:p-7 rounded-3xl border border-outline-variant/40">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">target</span>
+<h3 class="font-headline-md text-lg font-bold">Metas Técnicas 2026</h3>
+</div>
+<span class="px-2.5 py-0.5 rounded-full text-[11px] font-code bg-tertiary/15 text-tertiary border border-tertiary/30">Hoja de Ruta</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+<div class="p-3 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex items-center gap-2.5">
+<span class="text-primary font-bold">01.</span>
+<span>Next.js 15 &amp; Server Actions</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex items-center gap-2.5">
+<span class="text-primary font-bold">02.</span>
+<span>Arquitectura Limpia &amp; SOLID</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex items-center gap-2.5">
+<span class="text-primary font-bold">03.</span>
+<span>Testing Automatizado (Jest/Cypress)</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex items-center gap-2.5">
+<span class="text-primary font-bold">04.</span>
+<span>Docker &amp; CI/CD Pipelines</span>
+</div>
+</div>
+</div>
+<!-- Actualmente Aprendiendo -->
+<div class="glass-card p-6 sm:p-7 rounded-3xl border border-primary/30 relative overflow-hidden">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary">rocket_launch</span>
+<h3 class="font-headline-md text-lg font-bold">Actualmente Aprendiendo</h3>
+</div>
+<p class="text-xs text-on-surface-variant mb-4">
+            Tecnologías y prácticas en las que estoy profundizando activamente durante este trimestre:
+          </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-lg bg-primary/10 border border-primary/30 text-primary text-xs font-code flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> Next.js App Router
+            </span>
+<span class="px-3 py-1.5 rounded-lg bg-primary/10 border border-primary/30 text-primary text-xs font-code flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> Testing E2E con Cypress
+            </span>
+<span class="px-3 py-1.5 rounded-lg bg-secondary-container/20 border border-secondary/30 text-secondary text-xs font-code">Docker Containers</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high border border-outline-variant/40 text-on-surface text-xs font-code">Contribución Open Source</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high border border-outline-variant/40 text-on-surface text-xs font-code">TypeScript Avanzado</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high border border-outline-variant/40 text-on-surface text-xs font-code">Clean Code &amp; Refactoring</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Habilidades Técnicas (#stack) -->
+<section class="py-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-outline-variant/20" id="stack">
+<div class="text-center mb-14">
+<span class="text-primary font-code text-xs uppercase tracking-widest font-semibold">Tecnologías &amp; Herramientas</span>
+<h2 class="font-headline-lg text-headline-lg mt-1 mb-4">Tech Stack &amp; Habilidades</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto text-sm">
+        Conjunto de tecnologías y utilidades con las que desarrollo aplicaciones rápidas, accesibles y estructuradas.
+      </p>
+<div class="w-20 h-1 bg-primary mx-auto rounded-full mt-4"></div>
+</div>
+<!-- Skill Cards Categorizadas -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+<!-- Frontend -->
+<div class="glass-card glass-card-hover p-6 rounded-3xl flex flex-col justify-between border-t-2 border-t-primary">
+<div>
+<div class="flex items-center gap-3 mb-4">
+<div class="p-3 bg-primary/10 rounded-2xl text-primary">
+<span class="material-symbols-outlined text-2xl">devices</span>
+</div>
+<div>
+<h3 class="font-headline-md text-lg font-bold text-on-surface">Frontend</h3>
+<p class="text-xs text-on-surface-variant">Interfaces interactivas y reactivas</p>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant mb-5">
+            Dominio de maquetación semántica, componentes reutilizables, tipado estricto y estilos utility-first.
+          </p>
+</div>
+<div class="flex flex-wrap gap-2 pt-2 border-t border-outline-variant/20 font-code text-xs">
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-primary/30 text-primary rounded-md">HTML5</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-primary/30 text-primary rounded-md">CSS3</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-primary/30 text-primary rounded-md">JavaScript ES6+</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-primary/30 text-primary rounded-md">TypeScript</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-primary/30 text-primary rounded-md">React</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-primary/30 text-primary rounded-md">Next.js</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-primary/30 text-primary rounded-md">Tailwind CSS</span>
+</div>
+</div>
+<!-- Backend & DB -->
+<div class="glass-card glass-card-hover p-6 rounded-3xl flex flex-col justify-between border-t-2 border-t-secondary">
+<div>
+<div class="flex items-center gap-3 mb-4">
+<div class="p-3 bg-secondary-container/20 rounded-2xl text-secondary">
+<span class="material-symbols-outlined text-2xl">database</span>
+</div>
+<div>
+<h3 class="font-headline-md text-lg font-bold text-on-surface">Backend &amp; DB</h3>
+<p class="text-xs text-on-surface-variant">Lógica de servidor y datos</p>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant mb-5">
+            Creación de endpoints seguros, integración de APIs REST, modelado relacional y persistencia escalable.
+          </p>
+</div>
+<div class="flex flex-wrap gap-2 pt-2 border-t border-outline-variant/20 font-code text-xs">
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-secondary/30 text-secondary rounded-md">Node.js</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-secondary/30 text-secondary rounded-md">Prisma ORM</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-secondary/30 text-secondary rounded-md">PostgreSQL</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-secondary/30 text-secondary rounded-md">Supabase</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-secondary/30 text-secondary rounded-md">REST APIs</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-secondary/30 text-secondary rounded-md">BaaS</span>
+</div>
+</div>
+<!-- Herramientas & DevOps -->
+<div class="glass-card glass-card-hover p-6 rounded-3xl flex flex-col justify-between border-t-2 border-t-tertiary">
+<div>
+<div class="flex items-center gap-3 mb-4">
+<div class="p-3 bg-tertiary/10 rounded-2xl text-tertiary">
+<span class="material-symbols-outlined text-2xl">build</span>
+</div>
+<div>
+<h3 class="font-headline-md text-lg font-bold text-on-surface">Herramientas &amp; DevOps</h3>
+<p class="text-xs text-on-surface-variant">Flujo de trabajo y despliegue</p>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant mb-5">
+            Control de versiones con Git, diseño colaborativo con Figma, depuración de APIs y bases de contenedorización.
+          </p>
+</div>
+<div class="flex flex-wrap gap-2 pt-2 border-t border-outline-variant/20 font-code text-xs">
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-tertiary/30 text-tertiary rounded-md">Git</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-tertiary/30 text-tertiary rounded-md">GitHub</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-tertiary/30 text-tertiary rounded-md">VS Code</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-tertiary/30 text-tertiary rounded-md">Figma</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-tertiary/30 text-tertiary rounded-md">Postman</span>
+<span class="px-2.5 py-1 bg-surface-container-lowest border border-tertiary/30 text-tertiary rounded-md">Docker (progreso)</span>
+</div>
+</div>
+</div>
+<!-- Barra de Skill Icons interactiva -->
+<div class="glass-card p-5 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-xs font-code text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm">bolt</span>
+<span>Tecnologías en continuo uso:</span>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-4 text-xs font-code">
+<span class="px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/40 hover:border-primary transition-all">⚛️ React</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/40 hover:border-primary transition-all">▲ Next.js</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/40 hover:border-primary transition-all">🔷 TypeScript</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/40 hover:border-primary transition-all">🎨 Tailwind</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/40 hover:border-primary transition-all">🐘 PostgreSQL</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/40 hover:border-primary transition-all">🐙 Git</span>
+</div>
+</div>
+</section>
+<!-- 6. Proyectos Destacados (#proyectos) -->
+<section class="py-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-outline-variant/20" id="proyectos">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
+<div>
+<span class="text-primary font-code text-xs uppercase tracking-widest font-semibold">Portafolio Práctico</span>
+<h2 class="font-headline-lg text-headline-lg mt-1">Proyectos Destacados</h2>
+<p class="text-on-surface-variant mt-2 text-sm sm:text-base">Proyectos individuales y colaborativos desarrollados con código abierto y despliegues reales.</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 text-sm hover:underline" href="https://github.com/Mltiformacionjose" rel="noopener noreferrer" target="_blank">
+<span>Ver todos en GitHub</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Proyecto 1: Warframe Tracker -->
+<article class="glass-card glass-card-hover rounded-3xl overflow-hidden flex flex-col justify-between group">
+<div>
+<div class="relative aspect-video overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0e1416] via-transparent to-transparent z-10 opacity-70"></div>
+<img alt="Warframe Tracker - Panel interactivo con estadísticas y progreso" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/img/warframe.jpg"/>
+<div class="absolute top-3 left-3 z-20 flex flex-wrap gap-1.5">
+<span class="px-2.5 py-0.5 bg-black/70 backdrop-blur-md rounded-md text-[11px] font-code font-semibold text-primary border border-primary/30">React</span>
+<span class="px-2.5 py-0.5 bg-black/70 backdrop-blur-md rounded-md text-[11px] font-code font-semibold text-on-surface border border-outline-variant/40">Next.js</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-xl font-bold mb-2 group-hover:text-primary transition-colors">Warframe Tracker</h3>
+<p class="text-on-surface-variant text-xs sm:text-sm leading-relaxed mb-4">
+              Aplicación web moderna para gestionar colecciones, seguimiento de progresión en tiempo real, inventario y estadísticas del ecosistema Warframe consumiendo APIs en vivo.
+            </p>
+<div class="flex flex-wrap gap-1.5 mb-6 text-[11px] font-code text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30">React</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30">Next.js</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30">Tailwind CSS</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30">REST APIs</span>
+</div>
+</div>
+</div>
+<div class="p-6 pt-0 flex gap-3">
+<a class="flex-1 text-center py-2.5 px-3 rounded-xl border border-primary/40 font-code text-xs font-semibold hover:bg-primary/10 transition-all flex items-center justify-center gap-1.5 text-primary" href="https://github.com/Mltiformacionjose/warframe_fixed" rel="noopener noreferrer" target="_blank">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path></svg>
+<span>GitHub</span>
+</a>
+<a class="flex-1 text-center py-2.5 px-3 rounded-xl bg-primary text-on-primary font-code text-xs font-bold primary-glow transition-all flex items-center justify-center gap-1.5" href="https://github.com/Mltiformacionjose/warframe_fixed" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Ver Proyecto</span>
+</a>
+</div>
+</article>
+<!-- Proyecto 2: World Cup 2026 -->
+<article class="glass-card glass-card-hover rounded-3xl overflow-hidden flex flex-col justify-between group">
+<div>
+<div class="relative aspect-video overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0e1416] via-transparent to-transparent z-10 opacity-70"></div>
+<img alt="World Cup 2026 - Interfaz deportiva y de resultados" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/img/worldcup.jpg"/>
+<div class="absolute top-3 left-3 z-20 flex flex-wrap gap-1.5">
+<span class="px-2.5 py-0.5 bg-black/70 backdrop-blur-md rounded-md text-[11px] font-code font-semibold text-secondary border border-secondary/30">React</span>
+<span class="px-2.5 py-0.5 bg-black/70 backdrop-blur-md rounded-md text-[11px] font-code font-semibold text-on-surface border border-outline-variant/40">Colaborativo</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-xl font-bold mb-2 group-hover:text-primary transition-colors">World Cup 2026</h3>
+<p class="text-on-surface-variant text-xs sm:text-sm leading-relaxed mb-4">
+              Proyecto colaborativo desarrollado durante el bootcamp para el seguimiento integral de selecciones clasificadas, calendarios de partidos, grupos y estadísticas del Mundial 2026.
+            </p>
+<div class="flex flex-wrap gap-1.5 mb-6 text-[11px] font-code text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30">JavaScript</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30">React</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30">Tailwind CSS</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30">Git Branching</span>
+</div>
+</div>
+</div>
+<div class="p-6 pt-0 flex gap-3">
+<a class="flex-1 text-center py-2.5 px-3 rounded-xl border border-primary/40 font-code text-xs font-semibold hover:bg-primary/10 transition-all flex items-center justify-center gap-1.5 text-primary" href="https://github.com/Mltiformacionjose/grupo4WorldCup2026_Jose" rel="noopener noreferrer" target="_blank">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path></svg>
+<span>GitHub</span>
+</a>
+<a class="flex-1 text-center py-2.5 px-3 rounded-xl bg-primary text-on-primary font-code text-xs font-bold primary-glow transition-all flex items-center justify-center gap-1.5" href="https://github.com/Mltiformacionjose/grupo4WorldCup2026_Jose" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Ver Proyecto</span>
+</a>
+</div>
+</article>
+<!-- Proyecto 3: Imaginary Country -->
+<article class="glass-card glass-card-hover rounded-3xl overflow-hidden flex flex-col justify-between group">
+<div>
+<div class="relative aspect-video overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 bg-gradient-to-t from-[#0e1416] via-transparent to-transparent z-10 opacity-70"></div>
+<img alt="Imaginary Country - Panel de control de estado simulado y gobernanza" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/img/proyecto-imaginary-country.svg"/>
+<div class="absolute top-3 left-3 z-20 flex flex-wrap gap-1.5">
+<span class="px-2.5 py-0.5 bg-black/70 backdrop-blur-md rounded-md text-[11px] font-code font-semibold text-tertiary border border-tertiary/30">JavaScript</span>
+<span class="px-2.5 py-0.5 bg-black/70 backdrop-blur-md rounded-md text-[11px] font-code font-semibold text-on-surface border border-outline-variant/40">Colaborativo</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-xl font-bold mb-2 group-hover:text-primary transition-colors">Imaginary Country</h3>
+<p class="text-on-surface-variant text-xs sm:text-sm leading-relaxed mb-4">
+              Proyecto colaborativo educativo para la gestión interactiva de un estado ficticio. Incluye paneles de control, cálculo de métricas socioeconómicas y diseño modular.
+            </p>
+<div class="flex flex-wrap gap-1.5 mb-6 text-[11px] font-code text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30">HTML5</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30">JavaScript</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30">CSS Components</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30">GitHub Team</span>
+</div>
+</div>
+</div>
+<div class="p-6 pt-0 flex gap-3">
+<a class="flex-1 text-center py-2.5 px-3 rounded-xl border border-primary/40 font-code text-xs font-semibold hover:bg-primary/10 transition-all flex items-center justify-center gap-1.5 text-primary" href="https://github.com/mxu-init/imaginaryCountryGroup3" rel="noopener noreferrer" target="_blank">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path></svg>
+<span>GitHub</span>
+</a>
+<a class="flex-1 text-center py-2.5 px-3 rounded-xl bg-primary text-on-primary font-code text-xs font-bold primary-glow transition-all flex items-center justify-center gap-1.5" href="https://github.com/mxu-init/imaginaryCountryGroup3" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Ver Proyecto</span>
+</a>
+</div>
+</article>
+</div>
+</section>
+<!-- 7. GitHub Stats Section -->
+<section class="py-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-outline-variant/20">
+<div class="text-center mb-10">
+<span class="text-primary font-code text-xs uppercase tracking-widest font-semibold">Actividad en Código Abierto</span>
+<h2 class="font-headline-lg text-headline-lg mt-1 mb-2">Estadísticas de GitHub</h2>
+<p class="text-on-surface-variant text-sm max-w-md mx-auto">Métricas directas de commits, lenguajes y aportaciones en tiempo real desde el perfil de GitHub.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+<div class="glass-card p-4 rounded-2xl flex justify-center items-center overflow-hidden border border-outline-variant/30 hover:border-primary/40 transition-colors">
+<img alt="GitHub Stats de José" class="max-w-full h-auto rounded-xl" loading="lazy" src="https://github-readme-stats.vercel.app/api?username=Mltiformacionjose&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true"/>
+</div>
+<div class="glass-card p-4 rounded-2xl flex justify-center items-center overflow-hidden border border-outline-variant/30 hover:border-primary/40 transition-colors">
+<img alt="Top Lenguajes de José" class="max-w-full h-auto rounded-xl" loading="lazy" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mltiformacionjose&layout=compact&theme=github_dark&hide_border=true"/>
+</div>
+</div>
+</section>
+<!-- 8. Sección Contacto (#contacto) -->
+<section class="py-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-outline-variant/20" id="contacto">
+<div class="glass-card rounded-[32px] p-8 md:p-14 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-80 h-80 bg-primary/10 blur-[110px] pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 relative z-10">
+<!-- Info Directa de Contacto -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<span class="text-primary font-code text-xs uppercase tracking-widest font-semibold">Conversemos</span>
+<h2 class="font-headline-lg text-2xl sm:text-3xl font-bold mt-1 mb-4">
+              ¿Hablamos de tu próximo <span class="text-primary">gran proyecto</span>?
+            </h2>
+<p class="text-on-surface-variant text-sm mb-8 leading-relaxed">
+              Estoy siempre motivado para escuchar nuevas propuestas de trabajo, proyectos de software y oportunidades de prácticas. ¡Envíame un mensaje y respondere lo antes posible!
+            </p>
+<div class="space-y-4">
+<!-- Email -->
+<div class="flex items-center justify-between p-3.5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">mail</span>
+</div>
+<div>
+<p class="text-[11px] text-on-surface-variant font-code">CORREO ELECTRÓNICO</p>
+<a class="text-sm font-semibold text-on-surface hover:text-primary transition-colors" href="mailto:multiformacionjose@gmail.com">multiformacionjose@gmail.com</a>
+</div>
+</div>
+<button class="p-2 rounded-lg hover:bg-surface-variant text-outline hover:text-primary transition-all" onclick="navigator.clipboard.writeText('multiformacionjose@gmail.com'); alert('¡Correo copiado al portapapeles!');" title="Copiar correo">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+<!-- LinkedIn -->
+<div class="flex items-center justify-between p-3.5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/20 flex items-center justify-center text-secondary">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64c-.95 0-1.72.78-1.72 1.73s.77 1.73 1.72 1.73 1.73-.78 1.73-1.73-.78-1.73-1.73-1.73z"></path></svg>
+</div>
+<div>
+<p class="text-[11px] text-on-surface-variant font-code">LINKEDIN</p>
+<a class="text-sm font-semibold text-on-surface hover:text-primary transition-colors" href="https://www.linkedin.com/in/jose-multiformacion-278600312" rel="noopener noreferrer" target="_blank">jose-multiformacion</a>
+</div>
+</div>
+<a class="p-2 text-outline hover:text-primary" href="https://www.linkedin.com/in/jose-multiformacion-278600312" target="_blank">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+<!-- GitHub -->
+<div class="flex items-center justify-between p-3.5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-variant flex items-center justify-center text-on-surface">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path></svg>
+</div>
+<div>
+<p class="text-[11px] text-on-surface-variant font-code">GITHUB</p>
+<a class="text-sm font-semibold text-on-surface hover:text-primary transition-colors" href="https://github.com/Mltiformacionjose" rel="noopener noreferrer" target="_blank">@Mltiformacionjose</a>
+</div>
+</div>
+<a class="p-2 text-outline hover:text-primary" href="https://github.com/Mltiformacionjose" target="_blank">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+<!-- Ubicación -->
+<div class="flex items-center gap-3 p-3.5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30">
+<div class="w-10 h-10 rounded-xl bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-xl">location_on</span>
+</div>
+<div>
+<p class="text-[11px] text-on-surface-variant font-code">UBICACIÓN</p>
+<p class="text-sm font-semibold text-on-surface">España (Remoto / Presencial)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Formulario Funcional Visualmente -->
+<div class="lg:col-span-7 bg-surface-container-low/80 p-6 sm:p-8 rounded-2xl border border-outline-variant/30">
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias José ha recibido tu mensaje simulado! Te contactará pronto.'); this.reset();">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-code text-xs mb-1.5 text-on-surface-variant">Nombre completo</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-all text-sm font-body-md" placeholder="Tu nombre" required="" type="text"/>
+</div>
+<div>
+<label class="block font-code text-xs mb-1.5 text-on-surface-variant">Correo electrónico</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-all text-sm font-body-md" placeholder="tu@correo.com" required="" type="email"/>
+</div>
+</div>
+<div>
+<label class="block font-code text-xs mb-1.5 text-on-surface-variant">Asunto</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-all text-sm font-body-md" placeholder="Oferta de prácticas / Colaboración en proyecto" required="" type="text"/>
+</div>
+<div>
+<label class="block font-code text-xs mb-1.5 text-on-surface-variant">Mensaje</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-all text-sm font-body-md resize-none" placeholder="Cuéntame sobre la posición, proyecto o idea..." required="" rows="4"></textarea>
+</div>
+<button class="w-full py-3.5 bg-primary text-on-primary font-code text-xs font-bold uppercase tracking-wider rounded-xl primary-glow hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Enviar Mensaje</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- 9. Footer Semántico -->
+<footer class="w-full py-12 bg-surface-container border-t border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Frase Motivadora Destacada -->
+<div class="text-center py-6 mb-8 border-b border-outline-variant/20">
+<p class="font-headline-md text-lg sm:text-xl font-semibold text-on-surface italic">
+        "Cada proyecto es una nueva oportunidad para aprender algo nuevo."
+      </p>
+<p class="text-xs text-primary font-code mt-1 tracking-wider">
+        — Every project is another opportunity to learn something new.
+      </p>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-col items-center md:items-start text-center md:text-left">
+<div class="font-headline-md text-xl font-extrabold text-primary mb-1">José<span class="text-on-surface">.dev</span></div>
+<p class="text-on-surface-variant font-code text-xs">
+          © 2026 José. Todos los derechos reservados.
+        </p>
+</div>
+<!-- Enlaces de navegación rápida -->
+<div class="flex flex-wrap items-center justify-center gap-6 text-xs text-on-surface-variant font-medium">
+<a class="hover:text-primary transition-colors" href="#inicio">Inicio</a>
+<a class="hover:text-primary transition-colors" href="#sobre-mi">Sobre mí</a>
+<a class="hover:text-primary transition-colors" href="#formacion">Formación</a>
+<a class="hover:text-primary transition-colors" href="#stack">Stack</a>
+<a class="hover:text-primary transition-colors" href="#proyectos">Proyectos</a>
+<a class="hover:text-primary transition-colors" href="#contacto">Contacto</a>
+</div>
+<!-- Redes sociales footer -->
+<div class="flex items-center gap-4">
+<a aria-label="GitHub" class="p-2 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-primary hover:scale-110 transition-all" href="https://github.com/Mltiformacionjose" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path></svg>
+</a>
+<a aria-label="LinkedIn" class="p-2 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-primary hover:scale-110 transition-all" href="https://www.linkedin.com/in/jose-multiformacion-278600312" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451c.979 0 1.778-.773 1.778-1.729V1.73C24 .774 23.205 0 22.225 0z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Floating Action Button para contacto rápido en móviles -->
+<a aria-label="Enviar correo directo a José" class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-lg primary-glow z-40 md:hidden hover:scale-110 active:scale-95 transition-transform" href="mailto:multiformacionjose@gmail.com">
+<span class="material-symbols-outlined text-2xl">mail</span>
+</a>
+<script>
+  // Dynamic header blur and shadow on scroll
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 30) {
+      nav.classList.add('shadow-xl', 'bg-[#0e1416]/95');
+      nav.classList.remove('bg-[#0e1416]/80');
+    } else {
+      nav.classList.remove('shadow-xl', 'bg-[#0e1416]/95');
+      nav.classList.add('bg-[#0e1416]/80');
+    }
+  });
+</script>
+</body></html>
