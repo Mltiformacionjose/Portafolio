@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio | José - Frontend Developer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline": "#869397",
+                    "secondary-container": "#0566d9",
+                    "on-tertiary-fixed": "#2d1600",
+                    "secondary": "#adc6ff",
+                    "on-tertiary": "#4b2800",
+                    "inverse-primary": "#00687a",
+                    "inverse-on-surface": "#2b3133",
+                    "error-container": "#93000a",
+                    "primary-fixed": "#acedff",
+                    "on-primary-container": "#00424f",
+                    "inverse-surface": "#dee3e6",
+                    "on-background": "#dee3e6",
+                    "background": "#0e1416",
+                    "primary": "#4cd7f6",
+                    "primary-container": "#06b6d4",
+                    "error": "#ffb4ab",
+                    "surface-variant": "#303638",
+                    "surface-container-high": "#252b2d",
+                    "outline-variant": "#3d494c",
+                    "surface-container": "#1b2122",
+                    "secondary-fixed-dim": "#adc6ff",
+                    "on-surface": "#dee3e6",
+                    "on-secondary-fixed-variant": "#004395",
+                    "on-surface-variant": "#bcc9cd",
+                    "on-tertiary-fixed-variant": "#6a3b00",
+                    "surface": "#0e1416",
+                    "tertiary-fixed": "#ffdcbf",
+                    "primary-fixed-dim": "#4cd7f6",
+                    "on-tertiary-container": "#5b3200",
+                    "surface-bright": "#343a3c",
+                    "secondary-fixed": "#d8e2ff",
+                    "on-primary-fixed-variant": "#004e5c",
+                    "on-error": "#690005",
+                    "on-primary": "#003640",
+                    "tertiary-fixed-dim": "#ffb873",
+                    "on-secondary-container": "#e6ecff",
+                    "surface-dim": "#0e1416",
+                    "surface-container-lowest": "#090f11",
+                    "on-secondary": "#002e6a",
+                    "tertiary": "#ffb873",
+                    "on-error-container": "#ffdad6",
+                    "surface-tint": "#4cd7f6",
+                    "surface-container-highest": "#303638",
+                    "surface-container-low": "#171d1e",
+                    "tertiary-container": "#e89337",
+                    "on-secondary-fixed": "#001a42",
+                    "on-primary-fixed": "#001f26"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "4px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px",
+                    "stack-sm": "8px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "stack-md": "24px",
+                    "stack-lg": "48px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "code": ["Geist"],
+                    "label-md": ["Geist"],
+                    "display-xl-mobile": ["Montserrat"],
+                    "headline-lg": ["Montserrat"],
+                    "display-xl": ["Montserrat"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "code": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "display-xl-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 0.5px solid rgba(255, 255, 255, 0.1);
+        }
+        .primary-glow {
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+        }
+        .primary-glow:hover {
+            box-shadow: 0 0 30px rgba(6, 182, 212, 0.5);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #4cd7f6 0%, #0566d9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-16">
+<div class="font-headline-md text-headline-md font-bold text-primary">Portfolio</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex gap-gutter items-center">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="#inicio">Inicio</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#sobre-mi">Sobre mí</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#habilidades">Habilidades</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#proyectos">Proyectos</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#contacto">Contacto</a>
+</div>
+<a class="px-6 py-2 bg-primary-container text-on-primary font-bold rounded-full transition-all primary-glow font-label-md text-label-md" href="#contacto">Contactar</a>
+</div>
+</nav>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop space-y-stack-lg pt-24 pb-stack-lg">
+<!-- Hero Section -->
+<section class="min-h-[80vh] flex flex-col md:flex-row items-center justify-between gap-stack-lg py-stack-lg" id="inicio">
+<div class="flex-1 space-y-stack-md text-center md:text-left order-2 md:order-1">
+<div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-label-md text-label-md">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                    Disponible para nuevos proyectos
+                </div>
+<h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl leading-tight">
+                    ¡Hola! 👋 Soy <span class="gradient-text">José</span>
+</h1>
+<p class="text-on-surface-variant font-body-lg text-body-lg max-w-xl">
+                    Estudiante de Desarrollo Web en España, apasionado por crear aplicaciones modernas y mejorar continuamente mis habilidades.
+                </p>
+<div class="flex flex-col sm:flex-row gap-stack-sm justify-center md:justify-start pt-4">
+<a class="px-8 py-4 bg-primary-container text-on-primary font-bold rounded-full text-center transition-all primary-glow font-body-md text-body-md" href="#proyectos">Ver Proyectos</a>
+<a class="px-8 py-4 border border-outline-variant text-on-surface font-bold rounded-full text-center hover:bg-surface-variant/30 transition-all font-body-md text-body-md" href="#sobre-mi">Conóceme</a>
+</div>
+</div>
+<div class="flex-1 flex justify-center order-1 md:order-2">
+<div class="relative w-64 h-64 md:w-96 md:h-96">
+<div class="absolute inset-0 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+<img alt="José - Frontend Developer" class="w-full h-full object-cover rounded-full border-4 border-surface-variant shadow-2xl relative z-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzXO08fdnSGtgkaflwNu7lhva3nkZ0plVUVkz3vLuS6AnZW2bfs-j48C37HVw6YNNOOu-ofnsBBgWSX10gUfs7PQg5x2ILBdVeG4xiNkFp1SRwGuMYeQ14AoNVzsXz_Q0oWlLH_pDo1Pln6IBsbgLbss0NzpVbtEZfFKJkhva9tJ2ZyA6yefyq67x-CDOpcWXkpgKWYVFF5AJPOTwsBkuyRQJhl7KWHQzqiNZJbSKHka6er4wvgBCP"/>
+</div>
+</div>
+</section>
+<!-- Sobre mí -->
+<section class="py-stack-lg" id="sobre-mi">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
+<div class="space-y-stack-md">
+<h2 class="font-headline-lg text-headline-lg flex items-center gap-2">
+<span class="text-primary material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+                        Sobre mí
+                    </h2>
+<p class="text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+                        Soy un desarrollador frontend en formación con base en España. Mi viaje en el código comenzó con la curiosidad de entender cómo funcionaban las interfaces que usaba a diario, y hoy se ha convertido en una vocación por construir experiencias digitales excepcionales.
+                    </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-stack-sm">
+<div class="glass-card p-stack-md rounded-xl space-y-2">
+<span class="text-primary material-symbols-outlined">school</span>
+<h3 class="font-bold">Formación</h3>
+<p class="text-on-surface-variant text-sm">Estudiante en España enfocado en Full-Stack.</p>
+</div>
+<div class="glass-card p-stack-md rounded-xl space-y-2">
+<span class="text-primary material-symbols-outlined">code</span>
+<h3 class="font-bold">Stack</h3>
+<p class="text-on-surface-variant text-sm">Especializándome en React y Next.js.</p>
+</div>
+<div class="glass-card p-stack-md rounded-xl space-y-2">
+<span class="text-primary material-symbols-outlined">work</span>
+<h3 class="font-bold">Meta</h3>
+<p class="text-on-surface-variant text-sm">Buscando mi primera oportunidad laboral.</p>
+</div>
+<div class="glass-card p-stack-md rounded-xl space-y-2">
+<span class="text-primary material-symbols-outlined">psychology</span>
+<h3 class="font-bold">Foco</h3>
+<p class="text-on-surface-variant text-sm">Arquitectura y código limpio.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Stack Tecnológico -->
+<section class="py-stack-lg" id="habilidades">
+<h2 class="font-headline-lg text-headline-lg mb-stack-lg flex items-center gap-2">
+<span class="text-primary material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">laptop_mac</span>
+                Stack Actual
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
+<!-- Frontend -->
+<div class="glass-card p-stack-md rounded-2xl border-l-4 border-l-primary">
+<h3 class="font-headline-md text-headline-md mb-stack-sm">Frontend</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-code">HTML5</span>
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-code">CSS3</span>
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-code">JavaScript (ES6+)</span>
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-code">TypeScript</span>
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-code">React</span>
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-code">Next.js</span>
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-code">Tailwind CSS</span>
+</div>
+</div>
+<!-- Backend -->
+<div class="glass-card p-stack-md rounded-2xl border-l-4 border-l-secondary">
+<h3 class="font-headline-md text-headline-md mb-stack-sm">Backend</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-code">Node.js</span>
+<span class="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-code">Prisma ORM</span>
+<span class="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-code">PostgreSQL</span>
+</div>
+</div>
+<!-- Herramientas -->
+<div class="glass-card p-stack-md rounded-2xl border-l-4 border-l-tertiary">
+<h3 class="font-headline-md text-headline-md mb-stack-sm">Herramientas</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-tertiary/10 text-tertiary rounded-full text-xs font-code">Git</span>
+<span class="px-3 py-1 bg-tertiary/10 text-tertiary rounded-full text-xs font-code">GitHub</span>
+<span class="px-3 py-1 bg-tertiary/10 text-tertiary rounded-full text-xs font-code">VS Code</span>
+<span class="px-3 py-1 bg-tertiary/10 text-tertiary rounded-full text-xs font-code">Figma</span>
+<span class="px-3 py-1 bg-tertiary/10 text-tertiary rounded-full text-xs font-code">Postman</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Metas 2026 -->
+<section class="py-stack-lg bg-surface-container/50 rounded-3xl p-stack-lg">
+<div class="max-w-2xl mx-auto text-center space-y-stack-md">
+<h2 class="font-headline-lg text-headline-lg flex items-center justify-center gap-2">
+<span class="text-primary material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">target</span>
+                    Metas 2026
+                </h2>
+<div class="grid grid-cols-1 gap-stack-sm text-left">
+<div class="flex items-start gap-4 p-4 hover:bg-white/5 rounded-xl transition-all">
+<span class="material-symbols-outlined text-primary">done_all</span>
+<p class="font-body-md text-body-md">Construir aplicaciones full-stack de alta calidad y alto rendimiento.</p>
+</div>
+<div class="flex items-start gap-4 p-4 hover:bg-white/5 rounded-xl transition-all">
+<span class="material-symbols-outlined text-primary">done_all</span>
+<p class="font-body-md text-body-md">Mejorar en arquitectura de software y patrones de diseño.</p>
+</div>
+<div class="flex items-start gap-4 p-4 hover:bg-white/5 rounded-xl transition-all">
+<span class="material-symbols-outlined text-primary">done_all</span>
+<p class="font-body-md text-body-md">Aprender Testing automatizado (Cypress, Jest) y Docker.</p>
+</div>
+<div class="flex items-start gap-4 p-4 hover:bg-white/5 rounded-xl transition-all">
+<span class="material-symbols-outlined text-primary">done_all</span>
+<p class="font-body-md text-body-md">Contribuir activamente a proyectos open-source.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Proyectos -->
+<section class="py-stack-lg" id="proyectos">
+<h2 class="font-headline-lg text-headline-lg mb-stack-lg flex items-center gap-2">
+<span class="text-primary material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">folder_special</span>
+                Proyectos Destacados
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md">
+<!-- Project 1 -->
+<div class="glass-card rounded-3xl overflow-hidden group hover:translate-y-[-8px] transition-all duration-300">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A cinematic, high-quality UI design preview of a modern dashboard with dark mode aesthetics, featuring glowing neon blue graphs and glassmorphism elements. The style is ultra-professional and technical, matching a high-end developer portfolio theme with sleek typography and deep slate backgrounds." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPu9gDFAEaWjvTY9CPn4wJJiqUq5dTEx9eJ3AU8qB18zGl8MCIWZQWMP9nFgoZKkjwzcIS3YIAYFlycMsj-E0W2pXHLG5uZMaMoET7w275yp2-Eq3LVNqmAzIhI6sb2Xzc_GsvtKYTSTaHkkfU_pq48sCVPufC7odj7FUlCyLqrP5K_UqXDeILzVShk3QTNjCDI33uG3j51UwcksKh_TXqsF7HWof6PcV8L7ZSbx0TFtDFvJ8w9-QJ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+</div>
+<div class="p-stack-md space-y-stack-sm">
+<h3 class="font-headline-md text-headline-md">E-commerce Moderno</h3>
+<p class="text-on-surface-variant text-sm line-clamp-3">Tienda online construida con Next.js 14, Tailwind CSS y Stripe para pagos seguros.</p>
+<div class="flex gap-4 pt-2">
+<a class="text-primary flex items-center gap-1 text-sm font-bold hover:underline" href="#">
+<span class="material-symbols-outlined text-sm">visibility</span> Demo
+                            </a>
+<a class="text-on-surface-variant flex items-center gap-1 text-sm font-bold hover:text-primary" href="#">
+<span class="material-symbols-outlined text-sm">code</span> Código
+                            </a>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="glass-card rounded-3xl overflow-hidden group hover:translate-y-[-8px] transition-all duration-300">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close-up of a minimalist mobile app interface for a task management tool. The design shows a dark theme with vibrant turquoise highlights, frosted glass card components, and sophisticated micro-interactions. The background has a subtle mesh gradient of deep blues and cyans." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7nmIIl-8zNqlkT-xlsnfdwH6Dv7jXEc-fgpcdv-cxd-I2iMAiIAiCk68TLuuioNs5r6oTx74M6s63NX2-g9TqVDALy-fc2FeGXU8x2GobHWp31uxKrABN7N_xIeC4DROzLNCz3oNm8xGukWxHpSdhBqrRmFFQLOhXU5gKUAhBnjeOPkl03OZy-vElLTWIYxNFl9IvCot4Hs-76Jzaoz6IfLP4TNGYcjK3yIzxQdFefmp8t6CaGAg7"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+</div>
+<div class="p-stack-md space-y-stack-sm">
+<h3 class="font-headline-md text-headline-md">App de Productividad</h3>
+<p class="text-on-surface-variant text-sm line-clamp-3">Herramienta de gestión de tareas con sincronización en tiempo real usando Supabase.</p>
+<div class="flex gap-4 pt-2">
+<a class="text-primary flex items-center gap-1 text-sm font-bold hover:underline" href="#">
+<span class="material-symbols-outlined text-sm">visibility</span> Demo
+                            </a>
+<a class="text-on-surface-variant flex items-center gap-1 text-sm font-bold hover:text-primary" href="#">
+<span class="material-symbols-outlined text-sm">code</span> Código
+                            </a>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="glass-card rounded-3xl overflow-hidden group hover:translate-y-[-8px] transition-all duration-300">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Abstract 3D representation of a weather forecast application interface on a tablet. The UI features stunning glassmorphism effects with blurred backgrounds, crisp icons, and a dark slate color palette. Vibrant cyan accent glows illuminate the edges of the active weather widgets." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj5skS4dFyfsqqV55mB4r9UEnIWRTRbJrWqcRKeMCgLEoWEXflJ94Yu5kJ7SQD5x6JhXAMCvWDveYL9TAV-kXPBy4WcoKGiWobKZ4rDoKoTRJIXvv2VoHPlcLpXMFkX-TIJBG0SFVAXqqXh8baiYWBUWG2sxwzRUiFgxQBPv3zFqHwzUzJHq6lQ4--kgb2G1zhk7oBL2zk9azqS4FX6XXq7wXhNiAm4bdD4a8slwUfnQQyASzTKIDM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+</div>
+<div class="p-stack-md space-y-stack-sm">
+<h3 class="font-headline-md text-headline-md">Dashboard de Clima</h3>
+<p class="text-on-surface-variant text-sm line-clamp-3">Visualizador de datos meteorológicos consumiendo la API de OpenWeather con React Query.</p>
+<div class="flex gap-4 pt-2">
+<a class="text-primary flex items-center gap-1 text-sm font-bold hover:underline" href="#">
+<span class="material-symbols-outlined text-sm">visibility</span> Demo
+                            </a>
+<a class="text-on-surface-variant flex items-center gap-1 text-sm font-bold hover:text-primary" href="#">
+<span class="material-symbols-outlined text-sm">code</span> Código
+                            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contacto -->
+<section class="py-stack-lg" id="contacto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg">
+<div class="space-y-stack-md">
+<h2 class="font-headline-lg text-headline-lg flex items-center gap-2">
+<span class="text-primary material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">alternate_email</span>
+                        Hablemos
+                    </h2>
+<p class="text-on-surface-variant font-body-lg text-body-lg">
+                        ¿Tienes una idea en mente o buscas un nuevo integrante para tu equipo? Estoy listo para enfrentar nuevos desafíos y seguir aprendiendo.
+                    </p>
+<div class="space-y-4 pt-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="text-xs text-on-surface-variant font-label-md">Email</p>
+<a class="font-bold hover:text-primary transition-colors" href="mailto:multiformacionjose@gmail.com">multiformacionjose@gmail.com</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">link</span>
+</div>
+<div>
+<p class="text-xs text-on-surface-variant font-label-md">LinkedIn</p>
+<a class="font-bold hover:text-primary transition-colors" href="https://www.linkedin.com/in/jose-multiformacion-278600312" target="_blank">jose-multiformacion</a>
+</div>
+</div>
+</div>
+</div>
+<div class="glass-card p-stack-lg rounded-3xl">
+<form action="#" class="space-y-stack-md" method="POST" onsubmit="event.preventDefault(); alert('Mensaje enviado (Simulación)');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-stack-md">
+<div class="space-y-2">
+<label class="text-sm font-label-md ml-1">Nombre</label>
+<input class="w-full bg-surface-container-low border border-outline-variant focus:border-primary focus:ring-0 rounded-xl px-4 py-3 transition-all outline-none" placeholder="Tu nombre" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-label-md ml-1">Email</label>
+<input class="w-full bg-surface-container-low border border-outline-variant focus:border-primary focus:ring-0 rounded-xl px-4 py-3 transition-all outline-none" placeholder="tu@email.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-label-md ml-1">Mensaje</label>
+<textarea class="w-full bg-surface-container-low border border-outline-variant focus:border-primary focus:ring-0 rounded-xl px-4 py-3 transition-all outline-none resize-none" placeholder="¿En qué puedo ayudarte?" rows="4"></textarea>
+</div>
+<button class="w-full py-4 bg-primary text-on-primary font-bold rounded-xl primary-glow hover:bg-primary-container transition-all" type="submit">
+                            Enviar Mensaje
+                        </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Quote -->
+<section class="py-stack-lg text-center">
+<p class="font-headline-md text-headline-md italic text-on-surface-variant">
+                "Cada proyecto es una nueva oportunidad para aprender algo nuevo."
+            </p>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg bg-surface-container border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop gap-stack-md">
+<div class="font-headline-md text-headline-md font-bold text-primary">Portfolio</div>
+<p class="text-on-surface-variant font-label-md text-label-md text-center md:text-left">
+                © 2024 Portfolio de Desarrollador. Todos los derechos reservados.
+            </p>
+<div class="flex gap-gutter">
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 font-label-md text-label-md" href="https://www.linkedin.com/in/jose-multiformacion-278600312">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 font-label-md text-label-md" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 font-label-md text-label-md" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+<!-- Micro-interaction script -->
+<script>
+        // Simple active link tracker on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary', 'font-bold', 'border-b-2', 'border-primary', 'pb-1');
+                link.classList.add('text-on-surface-variant');
+                if (link.getAttribute('href').includes(current) && current !== '') {
+                    link.classList.remove('text-on-surface-variant');
+                    link.classList.add('text-primary', 'font-bold', 'border-b-2', 'border-primary', 'pb-1');
+                }
+            });
+        });
+    </script>
+</body></html>

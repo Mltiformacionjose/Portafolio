@@ -1,0 +1,392 @@
+<!DOCTYPE html><html class="dark" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Portfolio - José | Desarrollador Frontend</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Inter:wght@400;500&amp;family=Geist:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;family=Montserrat:wght@100..900&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#4cd7f6",
+                    "secondary-fixed-dim": "#adc6ff",
+                    "primary": "#4cd7f6",
+                    "on-secondary-fixed-variant": "#004395",
+                    "surface-container-highest": "#303638",
+                    "surface": "#0e1416",
+                    "on-secondary-fixed": "#001a42",
+                    "surface-variant": "#303638",
+                    "secondary-container": "#0566d9",
+                    "on-surface": "#dee3e6",
+                    "inverse-surface": "#dee3e6",
+                    "tertiary": "#ffb873",
+                    "primary-fixed": "#acedff",
+                    "outline": "#869397",
+                    "inverse-on-surface": "#2b3133",
+                    "tertiary-fixed-dim": "#ffb873",
+                    "on-primary-fixed-variant": "#004e5c",
+                    "tertiary-fixed": "#ffdcbf",
+                    "surface-container": "#1b2122",
+                    "on-error-container": "#ffdad6",
+                    "secondary-fixed": "#d8e2ff",
+                    "on-error": "#690005",
+                    "surface-dim": "#0e1416",
+                    "on-secondary-container": "#e6ecff",
+                    "background": "#0e1416",
+                    "on-surface-variant": "#bcc9cd",
+                    "on-primary-container": "#00424f",
+                    "on-tertiary-fixed": "#2d1600",
+                    "error-container": "#93000a",
+                    "on-background": "#dee3e6",
+                    "surface-bright": "#343a3c",
+                    "on-primary-fixed": "#001f26",
+                    "surface-tint": "#4cd7f6",
+                    "on-secondary": "#002e6a",
+                    "secondary": "#adc6ff",
+                    "on-tertiary-fixed-variant": "#6a3b00",
+                    "on-tertiary": "#4b2800",
+                    "error": "#ffb4ab",
+                    "on-primary": "#003640",
+                    "tertiary-container": "#e89337",
+                    "surface-container-low": "#171d1e",
+                    "outline-variant": "#3d494c",
+                    "surface-container-lowest": "#090f11",
+                    "inverse-primary": "#00687a",
+                    "surface-container-high": "#252b2d",
+                    "primary-container": "#06b6d4",
+                    "on-tertiary-container": "#5b3200"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "margin-desktop": "64px",
+                    "stack-md": "24px",
+                    "unit": "4px",
+                    "stack-lg": "48px",
+                    "stack-sm": "8px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Montserrat"],
+                    "code": ["Geist"],
+                    "body-lg": ["Inter"],
+                    "display-xl": ["Montserrat"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "label-md": ["Geist"],
+                    "display-xl-mobile": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "code": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "display-xl-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "800"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0e1416;
+            color: #dee3e6;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(27, 33, 34, 0.7);
+            backdrop-filter: blur(12px);
+            border: 0.5px solid rgba(255, 255, 255, 0.1);
+        }
+        .primary-glow {
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+        }
+        .primary-glow:hover {
+            box-shadow: 0 0 35px rgba(6, 182, 212, 0.5);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #4cd7f6, #0566d9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 dark:bg-surface/70 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-16">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary tracking-tight">Portfolio</div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="text-primary dark:text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="#inicio">Inicio</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#sobre-mi">Sobre mí</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#habilidades">Habilidades</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#proyectos">Proyectos</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#contacto">Contacto</a>
+</div>
+<a class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-md text-label-md font-bold primary-glow transition-all hover:scale-105 active:scale-95" href="#contacto">
+                Contactar
+            </a>
+</div>
+</nav>
+<main class="relative">
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-16 px-margin-mobile md:px-margin-desktop transition-all duration-1000 opacity-100 translate-y-0" id="inicio">
+<div class="absolute inset-0 z-0 overflow-hidden opacity-30">
+<div class="absolute -top-[20%] -left-[10%] w-[60%] h-[60%] bg-primary/20 blur-[120px] rounded-full"></div>
+<div class="absolute -bottom-[20%] -right-[10%] w-[60%] h-[60%] bg-secondary-container/10 blur-[120px] rounded-full"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+<div class="text-center md:text-left order-2 md:order-1">
+<span class="inline-block px-4 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-label-md text-label-md mb-stack-md">Disponible para proyectos</span>
+<h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl mb-4 leading-tight">
+                        Construyendo el <span class="text-gradient">Futuro Digital</span> con Precisión
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-xl">
+                        Desarrollador Frontend especializado en crear interfaces modernas, performantes y centradas en el usuario. Transformo ideas en experiencias interactivas memorables.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+<a class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-label-md text-label-md font-bold primary-glow transition-all hover:-translate-y-1" href="#proyectos">
+                            Ver Proyectos
+                        </a>
+<a class="border border-outline-variant bg-surface-variant/20 backdrop-blur-md px-8 py-4 rounded-xl font-label-md text-label-md font-bold hover:bg-surface-variant transition-all" href="#sobre-mi">
+                            Saber más
+                        </a>
+</div>
+</div>
+<div class="order-1 md:order-2 flex justify-center">
+<div class="relative w-64 h-64 md:w-96 md:h-96 group">
+<div class="absolute inset-0 bg-primary/30 rounded-[2rem] rotate-6 group-hover:rotate-12 transition-transform duration-500 blur-xl"></div>
+<div class="relative h-full w-full rounded-[2rem] overflow-hidden border-2 border-primary/50 glass-card">
+<img alt="José - Frontend Developer" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCecIwpDQ7qJizDBZWk-h7ZbtqdACBI7p7JmR9OGTqWrwRPpTnBp42rVV2ooKSNBLrJHN81tOAfkgdQ7GC-Xk8uMohdmT8yDGcUYiy0S-zdDfVPZR8zbO6zg9u1Z0MM8QRs_blos7RD14yOCPc_KKFYnvwtQPYp--lrQyuGvKqw4KJvwvbfv4YCQXvp-YAwCsy7oGK4B4kNCyNPmM74jpy4ZZyoBvZ91KhvZBBYRXeVt3D_lF2ziu37b07DZOpo1n0KHQ">
+</div>
+<div class="absolute -bottom-4 -right-4 glass-card p-4 rounded-2xl border border-primary/20 flex items-center gap-3">
+<div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+<span class="font-label-md text-label-md font-bold">Online</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Skills -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0" id="habilidades">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg mb-4">Tech Stack &amp; Habilidades</h2>
+<div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-gutter">
+<!-- Large Skill Card -->
+<div class="md:col-span-2 md:row-span-2 glass-card p-stack-md rounded-3xl flex flex-col justify-between hover:border-primary/40 transition-colors">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-4" style="font-variation-settings: &quot;FILL&quot; 1;">code</span>
+<h3 class="font-headline-md text-headline-md mb-4">Desarrollo Frontend</h3>
+<p class="text-on-surface-variant mb-6">Dominio de las tecnologías más punteras para crear aplicaciones web escalables y mantenibles.</p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-label-md font-code">React</span>
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-label-md font-code">TypeScript</span>
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-label-md font-code">Tailwind CSS</span>
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-label-md font-code">Next.js</span>
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-label-md font-code">Redux</span>
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-label-md font-code">Vite</span>
+</div>
+</div>
+<!-- Medium Card 1 -->
+<div class="md:col-span-2 glass-card p-stack-md rounded-3xl flex items-center gap-6 hover:border-primary/40 transition-colors">
+<div class="p-4 bg-tertiary/10 rounded-2xl">
+<span class="material-symbols-outlined text-tertiary text-3xl">brush</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-1">UI/UX Design</h4>
+<p class="text-on-surface-variant text-sm">Figma, Adobe XD, Prototipado interactivo.</p>
+</div>
+</div>
+<!-- Small Card 1 -->
+<div class="md:col-span-2 glass-card p-stack-md rounded-3xl flex items-center gap-6 hover:border-primary/40 transition-colors">
+<div class="p-4 bg-secondary-container/10 rounded-2xl">
+<span class="material-symbols-outlined text-secondary text-3xl">storage</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-1">Backend</h4>
+<p class="text-on-surface-variant text-sm">Desarrollo de APIs robustas con Node.js, PostgreSQL y Prisma ORM.</p>
+</div>
+</div>
+<!-- Small Card 2 -->
+
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0" id="proyectos">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div>
+<h2 class="font-headline-lg text-headline-lg">Proyectos Destacados</h2>
+<p class="text-on-surface-variant mt-2">Una selección de mis trabajos más recientes y complejos.</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 hover:underline" href="#">
+                    Ver todos en GitHub <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
+<!-- Project 1: Warframe Tracker -->
+<div class="group relative glass-card rounded-[24px] overflow-hidden transition-all duration-500 hover:-translate-y-2">
+<div class="relative aspect-video overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent z-10 opacity-60"></div>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A highly detailed, futuristic gaming dashboard interface for a Warframe tracking application. The UI features dark blue and slate tones with cyan neon accents. Data visualizations like progress circles, item inventory cards with glowing borders, and real-time mission status alerts are visible on a glassmorphic background. The atmosphere is professional, technical, and immersive, reflecting a high-performance gaming ecosystem." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzoZYIs15bgJrUyGSP7oGI8VjMG_FeqfiFJP8_kGjcXe-H6rb2o9H2RJKxRanofbQExu1Z5oydt4n3vce-cnGNzm6CHjk345y2ReotyeQ-mRFT1_erg-ltbH4PJjJTyQW0O1FzQ_JGCCLr6OyorSYjR7IGkjkv1FaVqPk630XzeS-FYhnu88Kd8SRXbZFWOaPCw4UO1FdOVcRSG5NTTH07PndWa1uQGX1Oy10ivxirEI5xoDtLLxU1">
+<div class="absolute top-4 left-4 z-20 flex gap-2">
+<span class="px-3 py-1 bg-surface-container/80 backdrop-blur-md rounded-full text-[12px] font-bold border border-outline-variant/30">React</span>
+<span class="px-3 py-1 bg-surface-container/80 backdrop-blur-md rounded-full text-[12px] font-bold border border-outline-variant/30">Official API</span>
+</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-headline-md mb-2 group-hover:text-primary transition-colors">Warframe Tracker</h3>
+<p class="text-on-surface-variant mb-6">A modern web application designed to help Warframe players manage their collection and progression.</p>
+<div class="flex gap-4">
+<a class="flex-1 text-center py-3 rounded-xl border border-primary/30 font-label-md text-label-md hover:bg-primary/10 transition-all" href="https://github.com/Mltiformacionjose/warframe-tracker" target="_blank">Código Fuente</a>
+<a class="flex-1 text-center py-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md primary-glow transition-all" href="#">Demo En Vivo</a>
+</div>
+</div>
+</div>
+<!-- Project 2: E-Commerce Luxury -->
+<div class="group relative glass-card rounded-[24px] overflow-hidden transition-all duration-500 hover:-translate-y-2">
+<div class="relative aspect-video overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent z-10 opacity-60"></div>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A sophisticated e-commerce website for luxury watches, displayed on a high-end desktop monitor. The design uses a minimalist slate-950 and white color palette with sharp typography and ample negative space. Product photography is crisp and artistic. The layout features a glassmorphic navigation bar and subtle drop shadows on product cards, creating a high-end premium aesthetic for elite clients." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLhZzXHhzWsiWzuerYty1WLzTz7WryoCWdVo7ZTQnCFqNRUOdlTMM6BH1Ym9DR5slqSl-1n4nUNPFvyFZH6IxbPz4ciJPhEjvH2jDoX_NQoz89v2eGg-fa8O1kR6OdF-a2WEilshPlFHql8dMA3etKtdyI5Ukk9Xtdw6nwJRYCZCaW7JJv2F9SbB_wYnjhod8c1AuRiZ1hyik9W-shHmVNiPvLX2JfscAh6Arpfp5OTCokGfrnQLEaqSlYgFKWMJgkerBqQ7ojGC-Rhg">
+<div class="absolute top-4 left-4 z-20 flex gap-2"><span class="px-3 py-1 bg-surface-container/80 backdrop-blur-md rounded-full text-[12px] font-bold border border-outline-variant/30">React</span><span class="px-3 py-1 bg-surface-container/80 backdrop-blur-md rounded-full text-[12px] font-bold border border-outline-variant/30">Tailwind</span></div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-headline-md mb-2 group-hover:text-primary transition-colors">World Cup 2026</h3>
+<p class="text-on-surface-variant mb-6">Comprehensive platform for tracking and managing World Cup 2026 information, schedules, and team statistics.</p>
+<div class="flex gap-4">
+<a class="flex-1 text-center py-3 rounded-xl border border-primary/30 font-label-md text-label-md hover:bg-primary/10 transition-all" href="https://github.com/Mltiformacionjose/grupo4WorldCup2026_Jose">Código Fuente</a>
+<a class="flex-1 text-center py-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md primary-glow transition-all" href="#">Demo En Vivo</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-stack-lg transition-all duration-1000 opacity-100 translate-y-0" id="contacto">
+<div class="glass-card rounded-[32px] p-8 md:p-16 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] -mr-32 -mt-32"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg relative z-10">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-6">¿Hablamos de tu próximo <span class="text-primary">gran proyecto</span>?</h2>
+<p class="text-on-surface-variant mb-8 max-w-md">Estoy siempre abierto a nuevas oportunidades y colaboraciones. Si tienes una idea, hagámosla realidad.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<p class="text-xs text-on-surface-variant font-label-md">Email</p>
+<p class="font-body-md font-bold">multiformacionjose@gmail.com</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<p class="text-xs text-on-surface-variant font-label-md">Ubicación</p>
+<p class="font-body-md font-bold">Remoto / Europa</p>
+</div>
+</div>
+</div>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-xs mb-2 ml-1 text-on-surface-variant">Nombre</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-all font-body-md" placeholder="Tu nombre aquí" type="text">
+</div>
+<div>
+<label class="block font-label-md text-xs mb-2 ml-1 text-on-surface-variant">Email</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-all font-body-md" placeholder="email@ejemplo.com" type="email">
+</div>
+</div>
+<div>
+<label class="block font-label-md text-xs mb-2 ml-1 text-on-surface-variant">Asunto</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-all font-body-md" placeholder="¿En qué puedo ayudarte?" type="text">
+</div>
+<div>
+<label class="block font-label-md text-xs mb-2 ml-1 text-on-surface-variant">Mensaje</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-all font-body-md resize-none" placeholder="Escribe tu mensaje..." rows="4"></textarea>
+</div>
+<button class="w-full py-4 bg-primary text-on-primary font-label-md text-label-md font-bold rounded-xl primary-glow hover:scale-[1.02] active:scale-[0.98] transition-all" type="submit">
+                            Enviar Mensaje
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg bg-surface-container dark:bg-surface-container border-t border-outline-variant/20 dark:border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop gap-stack-md">
+<div class="flex flex-col items-center md:items-start">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary mb-2">Portfolio</div>
+<p class="text-on-surface-variant font-label-md text-label-md opacity-80 hover:opacity-100 transition-opacity">© 2024 Portfolio de Desarrollador. Todos los derechos reservados.</p>
+</div>
+<div class="flex items-center gap-gutter">
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="https://www.linkedin.com/in/jose-multiformacion-278600312">LinkedIn</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="https://github.com/Mltiformacionjose" target="_blank">GitHub</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+<!-- FAB for quick contact (Suppressed on details/transactional as per rules, visible on landing) -->
+<a class="fixed bottom-8 right-8 w-14 h-14 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-lg primary-glow z-40 md:hidden" href="mailto:multiformacionjose@gmail.com">
+<span class="material-symbols-outlined">mail</span>
+</a>
+<script>
+        // Simple scroll spy and navbar background change
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'shadow-xl');
+                nav.classList.remove('h-16');
+            } else {
+                nav.classList.remove('py-2', 'shadow-xl');
+                nav.classList.add('h-16');
+            }
+        });
+
+        // Intersection observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+
+
+
+
+</body></html>
